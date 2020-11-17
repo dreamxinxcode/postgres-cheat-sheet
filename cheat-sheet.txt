@@ -1,0 +1,37 @@
+# Enter psql as postgres user
+
+psql -U postgres
+
+
+# Connect to a database
+
+\c database_name;
+
+
+# List all databases 
+
+\i
+
+
+# List all schemas
+
+\dn
+
+
+# Lists all tables
+
+\dt
+
+
+# Create a new role with a username and password:
+
+CREATE ROLE username PASSWORD password;
+
+# Create a new database:
+
+CREATE DATABASE [IF NOT EXISTS] db_name;
+
+
+# Delete a database permanently:
+
+DROP DATABASE [IF EXISTS] db_name;
